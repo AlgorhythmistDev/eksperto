@@ -146,4 +146,13 @@ Parent: Üst
 View: Görüntüle
 'Email Sent': 'E-posta gönderildi'
 'We have sent a verification code to your email address. <br> Please use it to verify your email address.': 'E-postanıza doğrulamanız için bir kod gönderdik. <br> Lütfen e-postanızı doğrulamak için kullanın.'
-'Code': 'Kod'
+Code: Kod
+Pinned: Sabitlenmiş
+Notes: Notlar
+'Add New Note': 'Yeni Not Ekle'
+'Edit Note {title}': 'Notu Düzenle {title}'
+'Note deleted successfully.': 'Not başarıyla silindi.'
+Note: Not
+'Are you sure you want to delete this note?': 'Bu notu silmek istediğinize emin misiniz?'
+'Delete Note': 'Notu Sil'
+'Add New label': 'Yeni Etiket Ekle'

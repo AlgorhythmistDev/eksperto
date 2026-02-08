@@ -32,6 +32,12 @@
 						<span>{% trans %}Users{% endtrans %}</span>
 					</a>
 				</li>
+				<li>
+					<a href="{{ path('app_admin_note_index') }}" data-turbo-frame="base-content">
+						<i class="i-tabler-notes"></i>
+						<span>{% trans %}Notes{% endtrans %}</span>
+					</a>
+				</li>
 				{% if is_granted('ROLE_SUPER_ADMIN') %}
 					<li>
 						<a href="{{ path('app_admin_files_index') }}" data-turbo-frame="base-content">

@@ -142,4 +142,13 @@ Parent: Parent
 View: View
 'Email Sent': 'Email Sent'
 'We have sent a verification code to your email address. <br> Please use it to verify your email address.': 'We have sent a verification code to your email address. <br> Please use it to verify your email address.'
-'Code': 'Code'
+Code: Code
+Notes: Notes
+'Add New Note': 'Add New Note'
+'Edit Note {title}': 'Edit Note {title}'
+'Note deleted successfully.': 'Note deleted successfully.'
+Pinned: Pinned
+'Are you sure you want to delete this note?': 'Are you sure you want to delete this note?'
+'Delete Note': 'Delete Note'
+Note: Note
+'Add New label': 'Add New label'

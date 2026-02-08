@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block actions %}
+	<a href='{{ path('app_admin_note_new') }}' class="btn btn-outline">
+		<i class="i-tabler-plus text-lg"></i>
+		{% trans %}Add New Note{% endtrans %}
+	</a>
+{% endblock %}
+
+{% block body %}
+	{{ component('NotesSearchComponent', {listTopic: 'notes', loading: 'lazy', entityClass: 'App\\Entity\\Note\\Note', options: {'allow_remove': true, 'allow_bulk_remove': true}}) }}
+{% endblock %}

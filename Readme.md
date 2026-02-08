@@ -38,11 +38,11 @@ npm run watch
 
 - Extract English translations:
   ```sh
-  symfony console translation:extract --force --format=yaml en
+  docker exec -it eksperto-php-1 php ./bin/console translation:extract --force --format=yaml en
   ```
 - Extract Turkish translations:
   ```sh
-  symfony console translation:extract --force --format=yaml tr
+  docker exec -it eksperto-php-1 php ./bin/console translation:extract --force --format=yaml tr
   ```
 
 ---
@@ -51,11 +51,11 @@ npm run watch
 
 - **List scheduled commands:**
   ```sh
-  symfony console schedule:list
+  docker exec -it eksperto-php-1 php ./bin/console schedule:list
   ```
 - **Run scheduler:**
   ```sh
-  symfony console schedule:run
+  docker exec -it eksperto-php-1 php ./bin/console schedule:run
   ```
 
 ---
@@ -118,7 +118,7 @@ Comfony manages your database schema automatically. **Do not create migration fi
 Apply all schema changes with:
 
 ```sh
-symfony console config:import
+docker exec -it eksperto-php-1 php ./bin/console config:import
 ```
 
 This command wraps `doctrine:migrations:migrate`, `doctrine:schema:update`, and `config:dump-import`. Use migration files only for custom operations.

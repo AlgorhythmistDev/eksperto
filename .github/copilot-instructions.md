@@ -16,7 +16,7 @@ Comfony is a modern Symfony 7.3 boilerplate with Hotwire Turbo, Stimulus, daisyU
 - Add `#[Broadcast(topics: ['entityname'], private: true)]` for real-time updates if needed.
 - Setters MUST accept nullable parameters for LiveComponent compatibility.
 - File attachments use Many-to-Many or Many-To-One with `App\Entity\File\File`
-- NO manual migrations - run `php bin/console config:import` for schema changes
+- NO manual migrations - run `docker exec -it eksperto-php-1 php ./bin/console config:import` for schema changes
 
 ### CRUD Implementation (LiveComponent + Turbo pattern)
 1. **Controller**: Standard Symfony controller with index/new/edit/delete routes
@@ -44,19 +44,19 @@ docker compose up                    # Start full stack
 yarn watch                         # Watch assets (or npm run watch)
 
 # Translations  
-symfony console translation:extract --force --format=yaml en
-symfony console translation:extract --force --format=yaml tr
+docker exec -it eksperto-php-1 php ./bin/console translation:extract --force --format=yaml en
+docker exec -it eksperto-php-1 php ./bin/console translation:extract --force --format=yaml tr
 
 # Database changes (no migrations!)
-php bin/console config:import       # Auto-apply schema changes
-php bin/console config:dump         # Dump configuration defiled in config/dump_config.yml
+docker exec -it eksperto-php-1 php ./bin/console config:import       # Auto-apply schema changes
+docker exec -it eksperto-php-1 php ./bin/console config:dump         # Dump configuration defiled in config/dump_config.yml
 
 # Code quality
 phpcbf && phpcs                    # Fix + check code standards
 
 # Scheduling
-symfony console schedule:list       # List scheduled commands
-symfony console schedule:run        # Run scheduler
+docker exec -it eksperto-php-1 php ./bin/console schedule:list       # List scheduled commands
+docker exec -it eksperto-php-1 php ./bin/console schedule:run        # Run scheduler
 ```
 
 ## Frontend Architecture
