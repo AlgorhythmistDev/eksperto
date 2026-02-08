@@ -19,6 +19,12 @@
 					<span>{% trans %}Home{% endtrans %}</span>
 				</a>
 			</li>
+			<li>
+				<a href="{{ path('app_inflation_calculator') }}" data-turbo-frame="base-content">
+					<i class="i-tabler-calculator"></i>
+					<span>{% trans %}Inflation Calculator{% endtrans %}</span>
+				</a>
+			</li>
 			{% if is_granted('ROLE_ADMIN') %}
 				<li>
 					<a href="{{ path('app_admin') }}" data-turbo-frame="base-content">
@@ -45,12 +51,12 @@
 							<span>{% trans %}Files{% endtrans %}</span>
 						</a>
 					</li>
-						<li>
-							<a href="{{ path('app_admin_configuration_index') }}" data-turbo-frame="base-content">
-								<i class="i-tabler-settings"></i>
-								<span>{% trans %}Configurations{% endtrans %}</span>
-							</a>
-						</li>
+					<li>
+						<a href="{{ path('app_admin_configuration_index') }}" data-turbo-frame="base-content">
+							<i class="i-tabler-settings"></i>
+							<span>{% trans %}Configurations{% endtrans %}</span>
+						</a>
+					</li>
 					<li>
 						<a href="{{ path('app_admin_page_index') }}" data-turbo-frame="base-content">
 							<i class="i-tabler-files"></i>

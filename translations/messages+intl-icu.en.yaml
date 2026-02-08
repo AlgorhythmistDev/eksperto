@@ -152,3 +152,25 @@ Pinned: Pinned
 'Delete Note': 'Delete Note'
 Note: Note
 'Add New label': 'Add New label'
+'Inflation Calculator': 'Inflation Calculator'
+'Start Date': 'Start Date'
+'End Date': 'End Date'
+'From TUIK data: 2024-01 onwards': 'From TUIK data: 2024-01 onwards'
+'To TUIK data: until 2026-02': 'To TUIK data: until 2026-02'
+'Calculate Inflation': 'Calculate Inflation'
+Reset: Reset
+'Total Inflation': 'Total Inflation'
+'Price Increase': 'Price Increase'
+'per 100 TL': 'per 100 TL'
+Period: Period
+'to': 'to'
+'Example Calculation': 'Example Calculation'
+'Original Price': 'Original Price'
+'Final Price': 'Final Price'
+'Monthly Inflation Rates': 'Monthly Inflation Rates'
+'About This Calculator': 'About This Calculator'
+'This calculator uses official inflation data from TUIK (Turkish Statistical Institute). The calculation uses monthly inflation rates to determine the compound inflation rate between the selected dates. The example shows how a 100 TL price changes over the period.': 'This calculator uses official inflation data from TUIK (Turkish Statistical Institute). The calculation uses monthly inflation rates to determine the compound inflation rate between the selected dates. The example shows how a 100 TL price changes over the period.'
+'Please select both start and end dates': 'Please select both start and end dates'
+'Please select dates between {startDate} and {endDate}': 'Please select dates between {startDate} and {endDate}'
+'An error occurred during calculation: {message}': 'An error occurred during calculation: {message}'
+months: months
